@@ -1,6 +1,6 @@
 {
   "name": "zpool-api",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Api interface for zpool.com with typescript declaration",
   "main": "dist/index.js",
   "types": "./lib/main.d.ts",
