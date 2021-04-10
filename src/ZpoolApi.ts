@@ -45,12 +45,9 @@ export default class ZpoolApi {
     return JSON.parse(response)
   }
 
-  async getBlocks(coin: string = undefined): Promise<ZpoolApiBlocksResponse> {
+  async getBlocks(): Promise<ZpoolApiBlocksResponse> {
     const options = {...this.requestOptions}
     options.path = '/api/blocks'
-    if (coin) {
-      options.path += `?coin=${coin}`
-    }
     const response = await request(options)
     return JSON.parse(response)
   }

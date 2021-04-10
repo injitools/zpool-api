@@ -11,7 +11,6 @@ const walletEx = await client.getWalletEx('address')
 const status = await client.getStatus()
 const currencies = await client.getCurrencies()
 const blocks = await client.getBlocks()
-const blocksLTC = await client.getBlocks('LTC')
 const miners = await client.getMiners()
 ```
 
