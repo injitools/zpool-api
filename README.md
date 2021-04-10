@@ -15,10 +15,6 @@ const blocksLTC = await client.getBlocks('LTC')
 const miners = await client.getMiners()
 ```
 
-## Warning
-
-wallet and walletEx endpoints have server side limiting for requests, so sometimes you will get an error and an empty response, consider this when implementing!
-
 ## Response Types
 ```typescript
 ZergpoolApiWalletResponse {
